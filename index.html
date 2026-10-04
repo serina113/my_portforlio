@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="hibi works. 想いをカタチにするWeb制作">
+  <title>hibi works. Web Design & Web Production</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="hibi works. トップへ">hibi <span>works.</span></a>
+
+      <nav class="global-nav" aria-label="メインナビゲーション">
+        <a href="#top">Top</a>
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Web Design | Web Production</p>
+          <h1>あなたの思いを<br>届けるために</h1>
+          <p class="hero-lead">
+            想いをカタチにする、<br class="sp-only">丁寧でシンプルなWebサイトを制作します。
+          </p>
+          <a class="button button--primary" href="#contact">
+            お問い合わせ
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">About</p>
+            <h2>自己紹介</h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image image-placeholder image-placeholder--portrait" data-label="ABOUT IMAGE"></div>
+
+          <div class="about-content">
+            <p class="about-greeting">はじめまして。<br>フリーランスでWeb制作をしている<br><strong>hibi</strong>です。</p>
+
+            <p>
+              1997年生まれ<br>
+              現在は会社員として働きながら、Web制作を行っています。
+            </p>
+
+            <p>
+              シンプルで洗練されたデザインが好きで、<br>
+              見る人に伝わる、使いやすいサイトを<br>
+              丁寧に制作することを心がけています。
+            </p>
+
+            <dl class="profile-list">
+              <div><dt>Name</dt><dd>hibi</dd></div>
+              <div><dt>Age</dt><dd>20s</dd></div>
+              <div><dt>Location</dt><dd>Sendai</dd></div>
+              <div><dt>Working style</dt><dd>会社員 / 副業Web制作者</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section class="section works" id="works">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Works</p>
+            <h2>制作実績</h2>
+          </div>
+        </div>
+
+        <div class="filter-list" role="group" aria-label="制作実績の絞り込み">
+          <button class="filter-button is-active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="website">Webサイト制作</button>
+          <button class="filter-button" data-filter="lp">LP制作</button>
+          <button class="filter-button" data-filter="other">その他</button>
+        </div>
+
+        <p>制作実績は、ただいま準備中です。<br>実績掲載にご協力いただける場合は、サービスさせていただきますのでご相談いただけますと幸いです。</p>
+        <!--
+        <div class="works-grid">
+          <article class="work-card" data-category="website">
+            <a href="#" class="work-card__link">
+              <div class="work-image image-placeholder" data-label="Urban Green Yoga Studio"></div>
+              <div class="work-meta">
+                <h3>Urban Green Yoga Studio</h3>
+                <p>Webサイト制作</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="lp">
+            <a href="#" class="work-card__link">
+              <div class="work-image image-placeholder" data-label="Lumière"></div>
+              <div class="work-meta">
+                <h3>Lumière</h3>
+                <p>LP制作</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="website">
+            <a href="#" class="work-card__link">
+              <div class="work-image image-placeholder" data-label="Cafe Rinto"></div>
+              <div class="work-meta">
+                <h3>Cafe Rinto</h3>
+                <p>Webサイト制作</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="lp">
+            <a href="#" class="work-card__link">
+              <div class="work-image image-placeholder" data-label="美容サロン Lueur"></div>
+              <div class="work-meta">
+                <h3>美容サロン Lueur</h3>
+                <p>LP制作</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="other">
+            <a href="#" class="work-card__link">
+              <div class="work-image image-placeholder" data-label="Banner Design"></div>
+              <div class="work-meta">
+                <h3>Banner Design</h3>
+                <p>バナー制作</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="website">
+            <a href="#" class="work-card__link">
+              <div class="work-image image-placeholder" data-label="Small Business Site"></div>
+              <div class="work-meta">
+                <h3>Small Business Site</h3>
+                <p>Webサイト制作</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        -->
+        <!--
+        <div class="section-more">
+          <a class="text-link" href="#contact">すべての実績を見る <span>→</span></a>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- SERVICE -->
+    <section class="section service" id="service">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Service</p>
+            <h2>できること</h2>
+          </div>
+        </div>
+
+        <div class="service-list">
+          <article class="service-item">
+            <span class="service-icon">01</span>
+            <div>
+              <h3>Webサイト制作</h3>
+              <p>デザインからコーディングまで、目的に合わせたWebサイトを制作します。</p>
+            </div>
+            <span class="service-arrow">→</span>
+          </article>
+
+          <article class="service-item">
+            <span class="service-icon">02</span>
+            <div>
+              <h3>LP制作</h3>
+              <p>サービスや商品の魅力が伝わる、シンプルで見やすいLPを制作します。</p>
+            </div>
+            <span class="service-arrow">→</span>
+          </article>
+
+          <article class="service-item">
+            <span class="service-icon">03</span>
+            <div>
+              <h3>サイトの修正・カスタマイズ</h3>
+              <p>既存サイトの文章・画像変更や、ちょっとしたレイアウト修正にも対応します。</p>
+            </div>
+            <span class="service-arrow">→</span>
+          </article>
+
+          <article class="service-item">
+            <span class="service-icon">04</span>
+            <div>
+              <h3>保守・運用サポート</h3>
+              <p>公開後の更新や、軽微な修正など継続的なサイト運用をサポートします。</p>
+            </div>
+            <span class="service-arrow">→</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta-inner container">
+        <p class="cta-kicker">Feel free to contact me.</p>
+        <h2>こんなことできるかな？<br>と思ったことも<br>お気軽にご相談ください。</h2>
+        <a class="button button--light" href="#contact">お問い合わせ <span>→</span></a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>お問い合わせ</h2>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-intro">
+            <p class="contact-title">ご相談・お見積もりなど、<br>お気軽にお問い合わせください。</p>
+            <p class="contact-note">内容を確認のうえ、通常2〜3営業日以内にご返信いたします。</p>
+          </div>
+
+          <form class="contact-form" action="#" method="post">
+            <div class="form-field">
+              <label for="name">お名前 <span>*</span></label>
+              <input id="name" name="name" type="text" placeholder="お名前を入力してください" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">メールアドレス <span>*</span></label>
+              <input id="email" name="email" type="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="type">お問い合わせ内容 <span>*</span></label>
+              <select id="type" name="type" required>
+                <option value="">選択してください</option>
+                <option value="website">Webサイト制作</option>
+                <option value="lp">LP制作</option>
+                <option value="customize">修正・カスタマイズ</option>
+                <option value="maintenance">保守・運用</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="message">お問い合わせ内容 <span>*</span></label>
+              <textarea id="message" name="message" rows="7" placeholder="ご相談内容をご入力ください" required></textarea>
+            </div>
+
+            <label class="privacy-check">
+              <input type="checkbox" required>
+              <span>プライバシーポリシーに同意する</span>
+            </label>
+
+            <button class="button button--primary button--submit" type="submit">
+              送信する <span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#top">hibi <span>works.</span></a>
+      <p>© 2026 hibi works.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
