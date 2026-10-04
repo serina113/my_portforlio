@@ -179,7 +179,7 @@ button {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(245,244,241,0.98) 0%, rgba(245,244,241,0.78) 35%, rgba(245,244,241,0.12) 72%),
-    url("assets/hero.png") center / cover no-repeat;
+    url("hero.png") center / cover no-repeat;
 }
 
 .hero-inner {
@@ -556,7 +556,7 @@ button {
   padding: 120px 0;
   background:
     linear-gradient(rgba(55,62,52,0.72), rgba(55,62,52,0.72)),
-    url("assets/cta.svg") center / cover no-repeat;
+    url("cta.svg") center / cover no-repeat;
   color: #fff;
   text-align: center;
 }
